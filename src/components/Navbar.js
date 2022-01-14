@@ -21,14 +21,7 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <a className="nav-a active" aria-current="page" href="https://gauravdubey110.github.io/textutils-react/" style={{ "text-decoration": "none" }}>Home</a>
               </li>
-              {/* <li className="nav-item">
-                <a className="nav-a active" to="/about">{props.aboutText}</a>
-              </li> */}
             </ul>
-            {/* <form className="d-flex">
-              <input className="form-control me-2" id="text-search" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-success" type="submit" >Search</button>
-            </form> */}
             <div className={`button text-${props.mode === 'light' ? 'dark' : 'light'} mx-3`}>
               <button type="button" onClick={props.toggleMode} className={props.mode === 'light' ? "btn-secondary btn-sm" : "btn-warning btn-sm"} title={props.mode === 'light' ? 'Switch to dark mode' : 'Switch to light mode'} >{props.mode === 'light' ? <FaMoon /> : <FontAwesomeIcon icon={faSun} />}</button>
             </div>
